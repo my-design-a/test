@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <style>
+       .btn{
+           background-color: green;
+           color: white;
+           font-weight: bolder;    
+       }
+       .btn a{
+         color: white;
+       }
+       .productname{
+           font-weight: bolder;
+           color: black;       
+       }
+   
+       .hide {
+  display: none;
+}
+       
+   </style>
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+  
+
+    
+
+    <div class="container-fluid">
+        <div class="row ">
+        <div class="card mr-1 ml-1 ">
+          <div class="col-sm text-center mt-2 mb-2">
+            <img src="garlic.jpg" class="img-fluid">
+            <p class="productname">Garlic</p>
+            <del>Rs. 25/kg</del>
+            <p class="productprice">Rs. 20/kg</p>
+            <div class="priceqtydropdown">
+            <select>
+                <option>Rs. 20/1 kg</option>
+                <option>Rs. 10/500 gms</option>
+                <option>Rs. 5/250 gms</option>
+            </select>
+            </div>
+            
+            <div class="btn mt-2"><span>-</span></div>
+            <input type="text" value="" placeholder="Qty"  style="width: 30px; height: 30px;border: none;text-align: center;font-weight: bolder;">
+            <div class="btn mt-2"><span>+</span></div> 
+            <div class="btn mt-2"><span>Add To Cart</span></div>   
+          </div>
+        </div>
+
+        <div class="card mr-1 ml-1">
+            <div class="col text-center mt-2 mb-2">
+              <img src="garlic.jpg" class="img-fluid">
+              <p class="productname">Garlic</p>
+              <del>Rs. 25/kg</del>
+              <p class="productprice">Rs. 20/kg</p>
+              <div class="priceqtydropdown">
+              <select>
+                  <option>Rs. 20/1 kg</option>
+                  <option>Rs. 10/500 gms</option>
+                  <option>Rs. 5/250 gms</option>
+              </select>
+              </div>
+              
+              <div class="btn mt-2"><span>-</span></div>
+              <input type="text" value="" placeholder="Qty"  style="width: 30px; height: 30px;border: none;text-align: center;font-weight: bolder;">
+              <div class="btn mt-2"><span>+</span></div> 
+              <div class="btn mt-2"><span>Add To Cart</span></div>   
+            </div>
+          </div>
+
+
+          <div class="card mr-1 ml-1">
+            <div class="col text-center mt-2 mb-2">
+              <img src="garlic.jpg" class="img-fluid">
+              <p class="productname">Garlic</p>
+              <del>Rs. 25/kg</del>
+              <p class="productprice">Rs. 20/kg</p>
+              <div class="priceqtydropdown">
+              <select >
+                  <option>Rs. 20/1 kg</option>
+                  <option>Rs. 10/500 gms</option>
+                  <option>Rs. 5/250 gms</option>
+              </select>
+              </div>
+            
+              <div class="btn mt-2"><span>-</span></div>
+              <input type="text" value="" placeholder="Qty"  style="width: 30px; height: 30px;border: none;text-align: center;font-weight: bolder;">
+              <div class="btn mt-2"><span>+</span></div> 
+              <div class="btn mt-2"><span>Add To Cart</span></div>   
+            </div>
+          </div>
+
+          <div class="card mr-1 ml-1">
+            <div class="col text-center mt-2 mb-2">
+              <img src="garlic.jpg" class="img-fluid">
+              <p class="productname">Garlic</p>
+              <del>Rs. 25/kg</del>
+              <p class="productprice">Rs. 20/kg</p>
+              <div class="priceqtydropdown" >
+              <select>
+                  <option>Rs. 20/1 kg</option>
+                  <option>Rs. 10/500 gms</option>
+                  <option>Rs. 5/250 gms</option>
+              </select>
+              </div>
+              
+              
+              <div class="btn mt-2" id="water" ><a href="#" ><i class="fa fa-minus" aria-hidden="true"></i></a>
+                <span style="margin-right: 1em;margin-left: 1em;color: white;">2</span>
+              <a href="#" ><i class="fa fa-plus" aria-hidden="true"></i></a></div>
+              <div class="btn mt-2" onclick="myFunction()" id="fire"><span>Add To Cart</span></div>   
+            </div>
+          </div>
+
+          <div class="card ">
+            <div class="col text-center mt-2 mb-2">
+              <img src="garlic.jpg" class="img-fluid">
+              <p class="productname">Garlic</p>
+              <del>Rs. 25/kg</del>
+              <p class="productprice">Rs. 20/kg</p>
+              <div class="qty"><button class="btn mr-1">250 gms</button><button class="btn mr-1">500 gms</button><button class="btn mr-1">1 kg</button></div>
+              <div class="priceqtydropdown">
+              <select>
+                  <option>Rs. 20/1 kg</option>
+                  <option>Rs. 10/500 gms</option>
+                  <option>Rs. 5/250 gms</option>
+              </select>
+              </div>
+             
+              
+              <div class="btn mt-2"><a href="#" ><i class="fa fa-minus" aria-hidden="true"></i></a>
+                <Input type="text" value="Qty" style="width: 45px; height: 25px;border: none;text-align: center;font-weight: bolder;margin-left: 1em;margin-right: 1em;"> </Input>
+              <a href="#" ><i class="fa fa-plus" aria-hidden="true"></i></a></div>
+              <div class="btn mt-2"><span>Add  To  Cart  </span><i class="fa fa-shopping-bag fa-lg"></i></div>  
+              
+              
+              
+            </div>
+          </div>
+
+        </div>
+    </div>
+    <button onclick="myFunction()" id="fire">AddToCart</button>
+    <button  id="water" style="visibility:hidden">Quantity</button>
+
+
+    <input type="submit" class="hide" value="Btn 1" id="btn1">
+<input type="submit" value="Btn 2" id="btn2" onClick="action(this);">
+<input type="submit" value="Btn 3" id="btn3" onClick="action(this);">
+
+    
+    
+
+    <script>function myFunction()
+      {
+      
+      document.getElementById("fire").style.visibility = 'hidden';
+      document.getElementById("water").style.visibility = 'visible';
+      }
+
+      var btn1 = document.getElementById('btn1');
+
+function action(el) {
+  el.classList.add('hide');
+  btn1.classList.remove('hide');
+}
+ </script>
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="row ">
+    <div class="col text-center mt-2 mb-2  .d-none .d-sm-block .d-md-none">
+      
+      <div class="card">
+      <div class="row">
+        <div class="col-xs-6 ">
+          <img src="garlic.jpg" class="img-fluid">
+        </div>
+        <div class="col-xs-6 mt-4  .d-none .d-sm-block .d-md-none">
+          <p>sjdddddddd</p>
+          <p>sjdddddddd</p>
+          <p>sjdddddddd</p>
+        </div>
+
+      </div>
+
+    </div>
+        
+    </div>
+  </div>
+</div>
+
+
+<div class="d-xs-block d-md-none">
+  <div class="card">
+  <div class="row ml-2 mr-2"> 
+     
+          <div class="col-xs-6 ">         
+            <div class="card ml-2 mt-2 mb-2 p-4">
+              <img src="garlic.jpg" width="150" height="150">
+            </div>
+          </div>
+          <div class="col-xs-6 mt-4 ml-4 text-center">
+            <p class="productname">Garlic</p>
+              <del>Rs. 25/kg</del>
+              <p class="productprice">Rs. 20/kg</p>
+
+              <div class="btn mb-2 pr-2"><a href="#" ><i class="fa fa-minus" aria-hidden="true"></i></a>  <span>1</span>
+              <a href="#" ><i class="fa fa-plus" aria-hidden="true"></i></a></div>
+              <div class="btn mb-2 pl-1"><span>Add  To  Cart </span><i class="fa fa-shopping-bag fa-lg"></i></div> 
+          </div>
+     
+  </div> 
+</div>
+</div> 
+
+
+
+
+
+  
+
+</body>
+</html>
