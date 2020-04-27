@@ -29,6 +29,28 @@
   display: none;
 }
        
+       
+       a:hover {
+    background: limegreen;
+    color: black;
+    padding: 1px;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+       .row-bordered {
+  position: relative;
+}
+
+.row-bordered:after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid black;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+}
+       
    </style>
 
 
@@ -301,7 +323,7 @@ function action(el) {
               
           </div>
           <div class="col-xs-3 mt-4 ml-4 text-center">
-            <p class="productname" style="font-family: 'sree_krushnadevarayaregular'">
+            <p class="productname">
               వెల్లుల్లి</p>
             
             <div class="mt-4 pull-right">
